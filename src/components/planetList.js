@@ -37,7 +37,7 @@ export default function PlanetList() {
 
   const deletePlanet = (id) => {
     axios
-      .delete('https://planetcard-backend-api.onrender.com/delete/' + id)
+      .delete('https://planetcard-backend-api.onrender.com/planets/delete/' + id)
       .then((response) => {
         console.log(response.data);
         //refreshing instead of changing frontend
